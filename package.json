@@ -1,0 +1,38 @@
+{
+  "name": "accesslease",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "lease:issue": "node --env-file=.env --import tsx scripts/issue.ts",
+    "lease:forge": "node --env-file=.env --import tsx scripts/issue.ts --forge",
+    "lease:revoke": "node --env-file=.env --import tsx scripts/revoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@arkiv-network/sdk": "^0.8.0",
+    "next": "^15.5.9",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "viem": "^2.38.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "8.5.23"
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

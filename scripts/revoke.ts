@@ -1,0 +1,13 @@
+import { createWalletClient } from '@arkiv-network/sdk';
+import { tiramisu } from '@arkiv-network/sdk/chains';
+import { http } from 'viem';
+import { privateKeyToAccount } from 'viem/accounts';
+import { ENTITY_KEY } from '../src/lib/policy';
+const key = process.argv.find(v => v.startsWith('--key='))?.slice('--key='.length);
+const pk = process.env.ARKIV_ISSUER_PRIVATE_KEY;
+if (!key || !ENTITY_KEY.test(key) || !pk || !/^0x[\da-f]{64}$/i.test(pk)) throw new Error('Set ARKIV_ISSUER_PRIVATE_KEY and pass --key=0x...');
+const account = privateKeyToAccount(pk as `0x${string}`);
+if (account.address.toLowerCase() !== (process.env.ARKIV_ISSUER_ADDRESS || '').toLowerCase()) throw new Error('Issuer wallet mismatch');
+const client = createWalletClient({ chain: tiramisu, transport: http(process.env.ARKIV_RPC_URL || undefined), account });
+const result = await client.deleteEntity({ entityKey: key as `0x${string}` });
+console.log(JSON.stringify({ revokedKey: key, txHash: result.txHash, wallet: account.address }, null, 2));
