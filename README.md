@@ -13,6 +13,10 @@ AccessLease is a **security-track hackathon MVP**, built 14 October 2026 for the
 - ✅ Production build and a read-only Tiramisu sample-policy check verified on 17 October 2026. Actual MetaMask signing against shared Redis still requires operator setup and manual verification; no transactions were submitted.
 - ⚠️ Demo only. Not a production authorization provider. See security limits below.
 
+## Product documentation
+
+Run the app and open [/docs](http://localhost:3000/docs) for the public guide: workflow, architecture, security model, demo scenarios, developer setup and FAQ. The shared header links the dashboard and documentation.
+
 ## Requirements
 
 - Node.js 22+, npm.

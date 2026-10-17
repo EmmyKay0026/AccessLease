@@ -7,4 +7,5 @@ out/
 *.log
 .DS_Store
 *.tsbuildinfo
-docs/
+# Local reports only; src/app/docs is application source.
+/docs/
