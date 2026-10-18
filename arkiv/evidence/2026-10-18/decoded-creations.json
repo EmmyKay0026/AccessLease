@@ -1,0 +1,206 @@
+[
+  {
+    "label": "local-trusted",
+    "entityKey": "0xd7129a9024db92da0898337d6c15e53f4639e690d0acb60f1ee619fc17549f8d",
+    "transactionHash": "0xe90154f87b7a61baf6d22a6e5b05017fc2aae92dd4cef49f62f40671cae479fd",
+    "creationBlock": "685671",
+    "blockTimestamp": "2026-10-17T07:11:48.000Z",
+    "transactionSender": "0xce09547fef1362b3711f17747096dcde2535a130",
+    "initialOwner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+    "initialExpiresAtBlock": "689271",
+    "creationFlags": 1,
+    "attributes": [
+      {
+        "name": "$contentType",
+        "typeId": 8,
+        "value": "application/json"
+      },
+      {
+        "name": "$payload",
+        "typeId": 7,
+        "value": "{\"schema\":\"accesslease/v1\",\"subject\":\"0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D\",\"resource\":\"vault-demo\",\"issuedAtMs\":1792221102358,\"notBeforeMs\":1792221102358,\"deadlineMs\":1792228302358}"
+      },
+      {
+        "name": "kind",
+        "typeId": 8,
+        "value": "lease"
+      },
+      {
+        "name": "project",
+        "typeId": 8,
+        "value": "accesslease-2026-v1"
+      },
+      {
+        "name": "resource",
+        "typeId": 8,
+        "value": "vault-demo"
+      },
+      {
+        "name": "subject",
+        "typeId": 8,
+        "value": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D"
+      }
+    ],
+    "payload": {
+      "schema": "accesslease/v1",
+      "subject": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D",
+      "resource": "vault-demo",
+      "issuedAtMs": 1792221102358,
+      "notBeforeMs": 1792221102358,
+      "deadlineMs": 1792228302358
+    }
+  },
+  {
+    "label": "local-forged",
+    "entityKey": "0xc2c4b6dd3d30eee93d4b6a453d04573b4aec63b527d0d4d05b584c3c45148cc0",
+    "transactionHash": "0x592669147e79dae1220e6e8912dbdca28ef9976366208a8573318fbc7fa892e7",
+    "creationBlock": "685693",
+    "blockTimestamp": "2026-10-17T07:12:32.000Z",
+    "transactionSender": "0x5d56708455378d2287464f705d410261b23c08ea",
+    "initialOwner": "0x5D56708455378d2287464F705D410261b23C08EA",
+    "initialExpiresAtBlock": "689293",
+    "creationFlags": 1,
+    "attributes": [
+      {
+        "name": "$contentType",
+        "typeId": 8,
+        "value": "application/json"
+      },
+      {
+        "name": "$payload",
+        "typeId": 7,
+        "value": "{\"schema\":\"accesslease/v1\",\"subject\":\"0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D\",\"resource\":\"vault-demo\",\"issuedAtMs\":1792221148286,\"notBeforeMs\":1792221148286,\"deadlineMs\":1792228348286}"
+      },
+      {
+        "name": "kind",
+        "typeId": 8,
+        "value": "lease"
+      },
+      {
+        "name": "project",
+        "typeId": 8,
+        "value": "accesslease-2026-v1"
+      },
+      {
+        "name": "resource",
+        "typeId": 8,
+        "value": "vault-demo"
+      },
+      {
+        "name": "subject",
+        "typeId": 8,
+        "value": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D"
+      }
+    ],
+    "payload": {
+      "schema": "accesslease/v1",
+      "subject": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D",
+      "resource": "vault-demo",
+      "issuedAtMs": 1792221148286,
+      "notBeforeMs": 1792221148286,
+      "deadlineMs": 1792228348286
+    }
+  },
+  {
+    "label": "production-trusted",
+    "entityKey": "0x4442961b028d0a06ef99a9c2180e83c3ed575b3640fe77d75fbfc10eb99e08d6",
+    "transactionHash": "0x3de71dfae34c5f9ae622c7a04e8c7d186416c137169864e97c54afcb4baa881b",
+    "creationBlock": "725598",
+    "blockTimestamp": "2026-10-18T05:22:42.000Z",
+    "transactionSender": "0xce09547fef1362b3711f17747096dcde2535a130",
+    "initialOwner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+    "initialExpiresAtBlock": "729198",
+    "creationFlags": 1,
+    "attributes": [
+      {
+        "name": "$contentType",
+        "typeId": 8,
+        "value": "application/json"
+      },
+      {
+        "name": "$payload",
+        "typeId": 7,
+        "value": "{\"schema\":\"accesslease/v1\",\"subject\":\"0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D\",\"resource\":\"vault-demo\",\"issuedAtMs\":1792300956061,\"notBeforeMs\":1792300956061,\"deadlineMs\":1792308156061}"
+      },
+      {
+        "name": "kind",
+        "typeId": 8,
+        "value": "lease"
+      },
+      {
+        "name": "project",
+        "typeId": 8,
+        "value": "accesslease-2026-v1"
+      },
+      {
+        "name": "resource",
+        "typeId": 8,
+        "value": "vault-demo"
+      },
+      {
+        "name": "subject",
+        "typeId": 8,
+        "value": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D"
+      }
+    ],
+    "payload": {
+      "schema": "accesslease/v1",
+      "subject": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D",
+      "resource": "vault-demo",
+      "issuedAtMs": 1792300956061,
+      "notBeforeMs": 1792300956061,
+      "deadlineMs": 1792308156061
+    }
+  },
+  {
+    "label": "production-forged",
+    "entityKey": "0x38ed7691584de4e98e103f7a057cc95855684ca34dceea6abcd7a2b8b4cd8c13",
+    "transactionHash": "0xe9d4dc9ae94b8c885100647da6c50dbb3c4906aefe5769af4c6e229c5caa6242",
+    "creationBlock": "725629",
+    "blockTimestamp": "2026-10-18T05:23:44.000Z",
+    "transactionSender": "0x5d56708455378d2287464f705d410261b23c08ea",
+    "initialOwner": "0x5D56708455378d2287464F705D410261b23C08EA",
+    "initialExpiresAtBlock": "729229",
+    "creationFlags": 1,
+    "attributes": [
+      {
+        "name": "$contentType",
+        "typeId": 8,
+        "value": "application/json"
+      },
+      {
+        "name": "$payload",
+        "typeId": 7,
+        "value": "{\"schema\":\"accesslease/v1\",\"subject\":\"0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D\",\"resource\":\"vault-demo\",\"issuedAtMs\":1792301017591,\"notBeforeMs\":1792301017591,\"deadlineMs\":1792308217591}"
+      },
+      {
+        "name": "kind",
+        "typeId": 8,
+        "value": "lease"
+      },
+      {
+        "name": "project",
+        "typeId": 8,
+        "value": "accesslease-2026-v1"
+      },
+      {
+        "name": "resource",
+        "typeId": 8,
+        "value": "vault-demo"
+      },
+      {
+        "name": "subject",
+        "typeId": 8,
+        "value": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D"
+      }
+    ],
+    "payload": {
+      "schema": "accesslease/v1",
+      "subject": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D",
+      "resource": "vault-demo",
+      "issuedAtMs": 1792301017591,
+      "notBeforeMs": 1792301017591,
+      "deadlineMs": 1792308217591
+    }
+  }
+]

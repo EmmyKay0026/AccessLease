@@ -1,0 +1,390 @@
+
+> accesslease@0.1.0 test
+> node --import tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: server nonce is unpredictable and challenge binds the full audience and scope
+ok 1 - server nonce is unpredictable and challenge binds the full audience and scope
+  ---
+  duration_ms: 30.8226
+  ...
+# Subtest: valid challenge signature recovers and authenticates the intended recipient
+ok 2 - valid challenge signature recovers and authenticates the intended recipient
+  ---
+  duration_ms: 119.1523
+  ...
+# Subtest: expired challenge and exact deadline are denied
+ok 3 - expired challenge and exact deadline are denied
+  ---
+  duration_ms: 15.0947
+  ...
+# Subtest: future-issued challenge is denied
+ok 4 - future-issued challenge is denied
+  ---
+  duration_ms: 8.0904
+  ...
+# Subtest: invalid signature and wrong signing wallet are denied without consuming nonce
+ok 5 - invalid signature and wrong signing wallet are denied without consuming nonce
+  ---
+  duration_ms: 88.619
+  ...
+# Subtest: replayed challenge is denied
+ok 6 - replayed challenge is denied
+  ---
+  duration_ms: 54.7254
+  ...
+# Subtest: two concurrent submissions yield exactly one successful consumption
+ok 7 - two concurrent submissions yield exactly one successful consumption
+  ---
+  duration_ms: 88.6051
+  ...
+# Subtest: wallet binding cannot be changed on a captured signature
+ok 8 - wallet binding cannot be changed on a captured signature
+  ---
+  duration_ms: 4.0142
+  ...
+# Subtest: resource binding cannot be changed on a captured signature
+ok 9 - resource binding cannot be changed on a captured signature
+  ---
+  duration_ms: 22.5032
+  ...
+# Subtest: lease binding cannot be changed on a captured signature
+ok 10 - lease binding cannot be changed on a captured signature
+  ---
+  duration_ms: 6.0854
+  ...
+# Subtest: signature for another origin is denied
+ok 11 - signature for another origin is denied
+  ---
+  duration_ms: 3.0536
+  ...
+# Subtest: malformed and legacy timestamp-only requests fail validation
+ok 12 - malformed and legacy timestamp-only requests fail validation
+  ---
+  duration_ms: 5.7841
+  ...
+# Subtest: signature cannot be altered by changing signed fields in storage
+ok 13 - signature cannot be altered by changing signed fields in storage
+  ---
+  duration_ms: 50.2509
+  ...
+# Subtest: expiry during verification is denied before consuming
+ok 14 - expiry during verification is denied before consuming
+  ---
+  duration_ms: 70.8694
+  ...
+# Subtest: shared-store failure fails closed and produces a safe error
+ok 15 - shared-store failure fails closed and produces a safe error
+  ---
+  duration_ms: 126.8785
+  ...
+# Subtest: origin validation uses configured audience rather than host or forwarded headers
+ok 16 - origin validation uses configured audience rather than host or forwarded headers
+  ---
+  duration_ms: 8.2899
+  ...
+# Subtest: body validation rejects null, malformed JSON, oversized payloads and wrong content types
+ok 17 - body validation rejects null, malformed JSON, oversized payloads and wrong content types
+  ---
+  duration_ms: 37.5983
+  ...
+# Subtest: a public request cannot infer its own production audience from an untrusted host
+ok 18 - a public request cannot infer its own production audience from an untrusted host
+  ---
+  duration_ms: 4.3604
+  ...
+# Subtest: trusted read-only lease grants correct scope and subject
+ok 19 - trusted read-only lease grants correct scope and subject
+  ---
+  duration_ms: 3.0933
+  ...
+# Subtest: forged creator always denied
+ok 20 - forged creator always denied
+  ---
+  duration_ms: 2.6552
+  ...
+# Subtest: ownership transfer is denied
+ok 21 - ownership transfer is denied
+  ---
+  duration_ms: 0.3953
+  ...
+# Subtest: mutable permissions are denied
+ok 22 - mutable permissions are denied
+  ---
+  duration_ms: 0.5103
+  ...
+# Subtest: permissionless extension is denied
+ok 23 - permissionless extension is denied
+  ---
+  duration_ms: 0.5115
+  ...
+# Subtest: Arkiv entity expired at current head
+ok 24 - Arkiv entity expired at current head
+  ---
+  duration_ms: 0.2817
+  ...
+# Subtest: wrong scope denied
+ok 25 - wrong scope denied
+  ---
+  duration_ms: 0.5869
+  ...
+# Subtest: wrong wallet denied
+ok 26 - wrong wallet denied
+  ---
+  duration_ms: 0.3177
+  ...
+# Subtest: fixed deadline wins even after storage extension
+ok 27 - fixed deadline wins even after storage extension
+  ---
+  duration_ms: 0.8499
+  ...
+# Subtest: future lease denied
+ok 28 - future lease denied
+  ---
+  duration_ms: 1.0234
+  ...
+# Subtest: lease longer than two hours denied
+ok 29 - lease longer than two hours denied
+  ---
+  duration_ms: 4.1655
+  ...
+# Subtest: corrupted payload denied
+ok 30 - corrupted payload denied
+  ---
+  duration_ms: 0.3418
+  ...
+# Subtest: future issuance is denied even when notBefore is backdated
+ok 31 - future issuance is denied even when notBefore is backdated
+  ---
+  duration_ms: 0.4168
+  ...
+# Subtest: API authentication and the installed Arkiv SDK enforce the complete access flow (mocked transports)
+    # Subtest: authorized recipient receives the protected synthetic resource
+    ok 1 - authorized recipient receives the protected synthetic resource
+      ---
+      duration_ms: 349.4332
+      ...
+    # Subtest: replay is rejected before another Arkiv query
+    ok 2 - replay is rejected before another Arkiv query
+      ---
+      duration_ms: 43.784
+      ...
+    # Subtest: concurrent API submissions permit only one chain check and result
+    ok 3 - concurrent API submissions permit only one chain check and result
+      ---
+      duration_ms: 60.7989
+      ...
+    # Subtest: forged permission is denied after live SDK decoding
+    ok 4 - forged permission is denied after live SDK decoding
+      ---
+      duration_ms: 51.1613
+      ...
+    # Subtest: expired permission is denied after live SDK decoding
+    ok 5 - expired permission is denied after live SDK decoding
+      ---
+      duration_ms: 47.1613
+      ...
+    # Subtest: revoked permission is denied after live SDK decoding
+    ok 6 - revoked permission is denied after live SDK decoding
+      ---
+      duration_ms: 56.7303
+      ...
+    # Subtest: wrong-recipient permission is denied after live SDK decoding
+    ok 7 - wrong-recipient permission is denied after live SDK decoding
+      ---
+      duration_ms: 56.6697
+      ...
+    # Subtest: wrong-resource permission is denied after live SDK decoding
+    ok 8 - wrong-resource permission is denied after live SDK decoding
+      ---
+      duration_ms: 49.3004
+      ...
+    # Subtest: future permission is denied after live SDK decoding
+    ok 9 - future permission is denied after live SDK decoding
+      ---
+      duration_ms: 49.3354
+      ...
+    # Subtest: transferred permission is denied after live SDK decoding
+    ok 10 - transferred permission is denied after live SDK decoding
+      ---
+      duration_ms: 46.8764
+      ...
+    # Subtest: mutable permission is denied after live SDK decoding
+    ok 11 - mutable permission is denied after live SDK decoding
+      ---
+      duration_ms: 29.4151
+      ...
+    # Subtest: unsafe-extension permission is denied after live SDK decoding
+    ok 12 - unsafe-extension permission is denied after live SDK decoding
+      ---
+      duration_ms: 31.562
+      ...
+    # Subtest: chain-expired permission is denied after live SDK decoding
+    ok 13 - chain-expired permission is denied after live SDK decoding
+      ---
+      duration_ms: 29.5188
+      ...
+    # Subtest: Arkiv failure returns 503, leaks no details and still consumes the nonce
+    ok 14 - Arkiv failure returns 503, leaks no details and still consumes the nonce
+      ---
+      duration_ms: 32.1202
+      ...
+    # Subtest: streaming response reports Arkiv stage before a final grant
+    ok 15 - streaming response reports Arkiv stage before a final grant
+      ---
+      duration_ms: 69.2291
+      ...
+    # Subtest: streamed Arkiv failure reports a final denial without protected data
+    ok 16 - streamed Arkiv failure reports a final denial without protected data
+      ---
+      duration_ms: 216.6068
+      ...
+    # Subtest: Redis outage fails closed, returns safe feedback, and never reaches Arkiv
+    ok 17 - Redis outage fails closed, returns safe feedback, and never reaches Arkiv
+      ---
+      duration_ms: 9.4626
+      ...
+    # Subtest: cross-origin and malformed requests never reach storage or Arkiv
+    ok 18 - cross-origin and malformed requests never reach storage or Arkiv
+      ---
+      duration_ms: 19.4781
+      ...
+    # Subtest: unconfigured production storage cannot fall back to local memory
+    ok 19 - unconfigured production storage cannot fall back to local memory
+      ---
+      duration_ms: 1.1603
+      ...
+    1..19
+ok 32 - API authentication and the installed Arkiv SDK enforce the complete access flow (mocked transports)
+  ---
+  duration_ms: 1833.3395
+  ...
+# Subtest: Redis adapter validates atomic consumption outcomes and never retries ambiguity
+ok 33 - Redis adapter validates atomic consumption outcomes and never retries ambiguity
+  ---
+  duration_ms: 3.8009
+  ...
+# Subtest: EIP-6963 discovers MetaMask alongside Phantom without requesting any accounts
+ok 34 - EIP-6963 discovers MetaMask alongside Phantom without requesting any accounts
+  ---
+  duration_ms: 5.1016
+  ...
+# Subtest: discovery registers listener before requesting providers and handles late announcements
+ok 35 - discovery registers listener before requesting providers and handles late announcements
+  ---
+  duration_ms: 0.7886
+  ...
+# Subtest: recipient validation rejects empty, malformed and zero addresses
+ok 36 - recipient validation rejects empty, malformed and zero addresses
+  ---
+  duration_ms: 1.6802
+  ...
+# Subtest: selected MetaMask flow encodes UTF-8 as hex and reports every real stage
+ok 37 - selected MetaMask flow encodes UTF-8 as hex and reports every real stage
+  ---
+  duration_ms: 100.2591
+  ...
+# Subtest: reject-connection resets loading, denies access, and never sends a stale access request
+ok 38 - reject-connection resets loading, denies access, and never sends a stale access request
+  ---
+  duration_ms: 1.0047
+  ...
+# Subtest: reject-signature resets loading, denies access, and never sends a stale access request
+ok 39 - reject-signature resets loading, denies access, and never sends a stale access request
+  ---
+  duration_ms: 2.7257
+  ...
+# Subtest: switch resets loading, denies access, and never sends a stale access request
+ok 40 - switch resets loading, denies access, and never sends a stale access request
+  ---
+  duration_ms: 3.5736
+  ...
+# Subtest: silent-switch resets loading, denies access, and never sends a stale access request
+ok 41 - silent-switch resets loading, denies access, and never sends a stale access request
+  ---
+  duration_ms: 12.205
+  ...
+# Subtest: disconnect resets loading, denies access, and never sends a stale access request
+ok 42 - disconnect resets loading, denies access, and never sends a stale access request
+  ---
+  duration_ms: 2.3448
+  ...
+# Subtest: pending resets loading, denies access, and never sends a stale access request
+ok 43 - pending resets loading, denies access, and never sends a stale access request
+  ---
+  duration_ms: 1.3439
+  ...
+# Subtest: hang-connection resets loading, denies access, and never sends a stale access request
+ok 44 - hang-connection resets loading, denies access, and never sends a stale access request
+  ---
+  duration_ms: 57.5839
+  ...
+# Subtest: hang-signature resets loading, denies access, and never sends a stale access request
+ok 45 - hang-signature resets loading, denies access, and never sends a stale access request
+  ---
+  duration_ms: 32.8249
+  ...
+# Subtest: hang HTTP failure resets loading and exposes only safe feedback
+ok 46 - hang HTTP failure resets loading and exposes only safe feedback
+  ---
+  duration_ms: 30.6572
+  ...
+# Subtest: stream-hang HTTP failure resets loading and exposes only safe feedback
+ok 47 - stream-hang HTTP failure resets loading and exposes only safe feedback
+  ---
+  duration_ms: 33.0186
+  ...
+# Subtest: network-error HTTP failure resets loading and exposes only safe feedback
+ok 48 - network-error HTTP failure resets loading and exposes only safe feedback
+  ---
+  duration_ms: 0.9507
+  ...
+# Subtest: malformed HTTP failure resets loading and exposes only safe feedback
+ok 49 - malformed HTTP failure resets loading and exposes only safe feedback
+  ---
+  duration_ms: 1.5799
+  ...
+# Subtest: expired HTTP failure resets loading and exposes only safe feedback
+ok 50 - expired HTTP failure resets loading and exposes only safe feedback
+  ---
+  duration_ms: 3.0599
+  ...
+# Subtest: permission denial terminates loading and does not display protected data
+ok 51 - permission denial terminates loading and does not display protected data
+  ---
+  duration_ms: 11.1654
+  ...
+# Subtest: missing selection cannot silently fall back to an injected wallet
+ok 52 - missing selection cannot silently fall back to an injected wallet
+  ---
+  duration_ms: 0.4317
+  ...
+# Subtest: late wallet response after timeout cannot resume signing or grant access
+ok 53 - late wallet response after timeout cannot resume signing or grant access
+  ---
+  duration_ms: 59.2059
+  ...
+# Subtest: HTTP timeout aborts the fetch request, including a stalled body
+ok 54 - HTTP timeout aborts the fetch request, including a stalled body
+  ---
+  duration_ms: 126.9098
+  ...
+# Subtest: account switching during the Arkiv stage prevents a late grant
+ok 55 - account switching during the Arkiv stage prevents a late grant
+  ---
+  duration_ms: 220.7955
+  ...
+# Subtest: an already-cancelled action cannot open a wallet prompt
+ok 56 - an already-cancelled action cannot open a wallet prompt
+  ---
+  duration_ms: 0.5843
+  ...
+1..56
+# tests 75
+# suites 0
+# pass 75
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 11120.8213

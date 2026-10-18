@@ -1,0 +1,1369 @@
+{
+  "startedAt": "2026-10-18T06:13:31.339Z",
+  "issuer": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+  "recipient": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830",
+  "otherRecipient": "0xF3455941385411060e90f25f738C37Bf6FD24F31",
+  "transactions": [
+    {
+      "label": "revocation-fixture",
+      "startedAt": "2026-10-18T06:13:35.494Z",
+      "txHash": "0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+      "entityKey": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+      "expiresAt": "727727",
+      "receipt": {
+        "type": "eip1559",
+        "status": "success",
+        "cumulativeGasUsed": "227254",
+        "logs": [
+          {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+              "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000b1aaf0000000000000000000000000000000000000000000000000000000000000001",
+            "blockHash": "0x861fddfcac254ca3f584039d1bd09bd84ee8cd9d7cd0f68d1c002f1916d3d2de",
+            "blockNumber": "727127",
+            "blockTimestamp": "1792304020",
+            "transactionHash": "0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+            "transactionIndex": 2,
+            "logIndex": 2,
+            "removed": false
+          }
+        ],
+        "logsBloom": "0x00000000020000000000000000000000000000000002000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000020000000000000000000400000000000000000020000000000000000000200000000000080000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000001000000000",
+        "transactionHash": "0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+        "transactionIndex": 2,
+        "blockHash": "0x861fddfcac254ca3f584039d1bd09bd84ee8cd9d7cd0f68d1c002f1916d3d2de",
+        "blockNumber": "727127",
+        "gasUsed": "103264",
+        "effectiveGasPrice": "1000000002",
+        "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+        "to": "0x4400000000000000000000000000000000000044",
+        "contractAddress": null
+      },
+      "blockTimestamp": "2026-10-18T06:13:40.000Z",
+      "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29"
+    },
+    {
+      "label": "delete-revocation-fixture",
+      "startedAt": "2026-10-18T06:13:54.567Z",
+      "txHash": "0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7",
+      "entityKey": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+      "receipt": {
+        "type": "eip1559",
+        "status": "success",
+        "cumulativeGasUsed": "24510",
+        "logs": [
+          {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0x4059b76c47e1ecc40ba88e649b654f716515eb358c3ce83c803820e3b3130cc3",
+              "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x",
+            "blockHash": "0x22eeedc819ccced4a0a99bd518b552f502f14ba7405bd1133dae4c50cbc7a49a",
+            "blockNumber": "727137",
+            "blockTimestamp": "1792304040",
+            "transactionHash": "0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7",
+            "transactionIndex": 0,
+            "logIndex": 0,
+            "removed": false
+          }
+        ],
+        "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000020000000000000000000400000000000000000020000000000000000000200000000000080000000000000000000000000000000000000000000000000000000040000080000000000000000000000000000000000000000000000000000200080000000000000000000000000000000000000000000000001000000000",
+        "transactionHash": "0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7",
+        "transactionIndex": 0,
+        "blockHash": "0x22eeedc819ccced4a0a99bd518b552f502f14ba7405bd1133dae4c50cbc7a49a",
+        "blockNumber": "727137",
+        "gasUsed": "24510",
+        "effectiveGasPrice": "1000000002",
+        "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+        "to": "0x4400000000000000000000000000000000000044",
+        "contractAddress": null
+      },
+      "blockTimestamp": "2026-10-18T06:14:00.000Z",
+      "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7"
+    },
+    {
+      "label": "deadline-fixture",
+      "startedAt": "2026-10-18T06:15:18.570Z",
+      "txHash": "0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+      "entityKey": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+      "expiresAt": "727208",
+      "receipt": {
+        "type": "eip1559",
+        "status": "success",
+        "cumulativeGasUsed": "103264",
+        "logs": [
+          {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+              "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000b18a80000000000000000000000000000000000000000000000000000000000000001",
+            "blockHash": "0x4e30d98739f0dc7f2feeb75bc56bae018559f79d0683fc7d535291f64de07d03",
+            "blockNumber": "727178",
+            "blockTimestamp": "1792304122",
+            "transactionHash": "0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+            "transactionIndex": 0,
+            "logIndex": 0,
+            "removed": false
+          }
+        ],
+        "logsBloom": "0x00000000020000000002000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000200000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000020000000000000000000200000000000080000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000",
+        "transactionHash": "0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+        "transactionIndex": 0,
+        "blockHash": "0x4e30d98739f0dc7f2feeb75bc56bae018559f79d0683fc7d535291f64de07d03",
+        "blockNumber": "727178",
+        "gasUsed": "103264",
+        "effectiveGasPrice": "1000000002",
+        "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+        "to": "0x4400000000000000000000000000000000000044",
+        "contractAddress": null
+      },
+      "blockTimestamp": "2026-10-18T06:15:22.000Z",
+      "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94"
+    },
+    {
+      "label": "extend-deadline-fixture-storage",
+      "startedAt": "2026-10-18T06:15:31.102Z",
+      "txHash": "0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961",
+      "entityKey": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+      "expiresAt": "727485",
+      "receipt": {
+        "type": "eip1559",
+        "status": "success",
+        "cumulativeGasUsed": "149170",
+        "logs": [
+          {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0x10dc3526654c9ba4e2370b1bfcbc0de087d141a5694b3d3305d37df7e6705d4b",
+              "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000b19bd",
+            "blockHash": "0x18ce95df7caee057421565f0dfa2c78ac28c39dc1feccf0a93d2431404abbf70",
+            "blockNumber": "727185",
+            "blockTimestamp": "1792304136",
+            "transactionHash": "0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961",
+            "transactionIndex": 2,
+            "logIndex": 2,
+            "removed": false
+          }
+        ],
+        "logsBloom": "0x00000000000000000002000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000200000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000020100000000000000000200000000000080000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000",
+        "transactionHash": "0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961",
+        "transactionIndex": 2,
+        "blockHash": "0x18ce95df7caee057421565f0dfa2c78ac28c39dc1feccf0a93d2431404abbf70",
+        "blockNumber": "727185",
+        "gasUsed": "25180",
+        "effectiveGasPrice": "1000000002",
+        "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+        "to": "0x4400000000000000000000000000000000000044",
+        "contractAddress": null
+      },
+      "blockTimestamp": "2026-10-18T06:15:36.000Z",
+      "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961"
+    },
+    {
+      "label": "retention-fixture",
+      "startedAt": "2026-10-18T06:15:37.469Z",
+      "txHash": "0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+      "entityKey": "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+      "expiresAt": "727217",
+      "receipt": {
+        "type": "eip1559",
+        "status": "success",
+        "cumulativeGasUsed": "227254",
+        "logs": [
+          {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+              "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000b18b10000000000000000000000000000000000000000000000000000000000000001",
+            "blockHash": "0xaca6fcc00b8394070578eb18264af994b701da357c14eb23a2f62f5edbd836c2",
+            "blockNumber": "727187",
+            "blockTimestamp": "1792304140",
+            "transactionHash": "0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+            "transactionIndex": 2,
+            "logIndex": 2,
+            "removed": false
+          }
+        ],
+        "logsBloom": "0x00000000020000000000000000000000000000000002000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000020000000000000000000200000000000080000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000001000000000",
+        "transactionHash": "0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+        "transactionIndex": 2,
+        "blockHash": "0xaca6fcc00b8394070578eb18264af994b701da357c14eb23a2f62f5edbd836c2",
+        "blockNumber": "727187",
+        "gasUsed": "103264",
+        "effectiveGasPrice": "1000000002",
+        "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+        "to": "0x4400000000000000000000000000000000000044",
+        "contractAddress": null
+      },
+      "blockTimestamp": "2026-10-18T06:15:40.000Z",
+      "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af"
+    }
+  ],
+  "checks": [
+    {
+      "label": "issuer-testnet-balance",
+      "recordedAt": "2026-10-18T06:13:35.486Z",
+      "value": {
+        "wei": "9999380415998760832"
+      }
+    },
+    {
+      "label": "revocation-fixture:on-chain-before",
+      "recordedAt": "2026-10-18T06:13:41.982Z",
+      "value": {
+        "checkedAt": "2026-10-18T06:13:41.029Z",
+        "key": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+        "status": "present",
+        "creator": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "creationBlock": "727127",
+        "expiresAtBlock": "727727",
+        "headBlock": "727128",
+        "creationFlags": {
+          "readonly": true,
+          "permissionlessExtension": false,
+          "raw": 1
+        },
+        "attributes": {
+          "kind": {
+            "type": "str",
+            "value": "lease"
+          },
+          "project": {
+            "type": "str",
+            "value": "accesslease-2026-v1"
+          },
+          "resource": {
+            "type": "str",
+            "value": "vault-demo"
+          },
+          "subject": {
+            "type": "str",
+            "value": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830"
+          }
+        },
+        "payload": {
+          "schema": "accesslease/v1",
+          "subject": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830",
+          "resource": "vault-demo",
+          "issuedAtMs": 1792304015494,
+          "notBeforeMs": 1792304015494,
+          "deadlineMs": 1792305215494
+        },
+        "localPolicy": {
+          "allowed": true,
+          "reason": "allowed"
+        }
+      }
+    },
+    {
+      "label": "trusted-public",
+      "recordedAt": "2026-10-18T06:13:43.578Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:42.029Z",
+        "completedAt": "2026-10-18T06:13:43.578Z",
+        "path": "/api/verify?key=0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9&resource=vault-demo",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:13:43 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "decision": {
+            "allowed": true,
+            "reason": "allowed"
+          },
+          "creator": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+          "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+          "expiresAtBlock": "727727",
+          "subject": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830",
+          "resource": "vault-demo",
+          "deadlineMs": 1792305215494
+        }
+      }
+    },
+    {
+      "label": "authenticated-allow:challenge",
+      "recordedAt": "2026-10-18T06:13:44.718Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:13:43.590Z",
+        "serverDate": "Sun, 18 Oct 2026 06:13:44 GMT",
+        "binding": {
+          "key": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+          "resource": "vault-demo",
+          "subject": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304024319,
+          "expiresAtMs": 1792304144319
+        }
+      }
+    },
+    {
+      "label": "authenticated-allow",
+      "recordedAt": "2026-10-18T06:13:46.026Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:44.740Z",
+        "completedAt": "2026-10-18T06:13:46.026Z",
+        "path": "/api/access",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:13:46 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": true,
+          "reason": "allowed",
+          "resource": "vault-demo",
+          "data": "SYNTHETIC: Incident vault report #AL-104 · No real confidential information."
+        }
+      }
+    },
+    {
+      "label": "authenticated-allow:replay",
+      "recordedAt": "2026-10-18T06:13:46.648Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:46.035Z",
+        "completedAt": "2026-10-18T06:13:46.648Z",
+        "path": "/api/access",
+        "status": 403,
+        "serverDate": "Sun, 18 Oct 2026 06:13:46 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": false,
+          "reason": "challenge_used",
+          "error": "Signature challenge expired or already used — please retry."
+        }
+      }
+    },
+    {
+      "label": "wrong-scope-public",
+      "recordedAt": "2026-10-18T06:13:47.410Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:46.662Z",
+        "completedAt": "2026-10-18T06:13:47.409Z",
+        "path": "/api/verify?key=0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9&resource=analytics-demo",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:13:47 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "decision": {
+            "allowed": false,
+            "reason": "resource_mismatch"
+          },
+          "creator": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+          "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+          "expiresAtBlock": "727727",
+          "subject": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830",
+          "resource": "vault-demo",
+          "deadlineMs": 1792305215494
+        }
+      }
+    },
+    {
+      "label": "wrong-scope-authenticated:challenge",
+      "recordedAt": "2026-10-18T06:13:48.075Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:13:47.429Z",
+        "serverDate": "Sun, 18 Oct 2026 06:13:48 GMT",
+        "binding": {
+          "key": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+          "resource": "analytics-demo",
+          "subject": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304028156,
+          "expiresAtMs": 1792304148156
+        }
+      }
+    },
+    {
+      "label": "wrong-scope-authenticated",
+      "recordedAt": "2026-10-18T06:13:49.323Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:48.098Z",
+        "completedAt": "2026-10-18T06:13:49.323Z",
+        "path": "/api/access",
+        "status": 403,
+        "serverDate": "Sun, 18 Oct 2026 06:13:49 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": false,
+          "reason": "resource_mismatch"
+        }
+      }
+    },
+    {
+      "label": "wrong-recipient-authenticated:challenge",
+      "recordedAt": "2026-10-18T06:13:50.052Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:13:49.356Z",
+        "serverDate": "Sun, 18 Oct 2026 06:13:50 GMT",
+        "binding": {
+          "key": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+          "resource": "vault-demo",
+          "subject": "0xF3455941385411060e90f25f738C37Bf6FD24F31"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304030060,
+          "expiresAtMs": 1792304150060
+        }
+      }
+    },
+    {
+      "label": "wrong-recipient-authenticated",
+      "recordedAt": "2026-10-18T06:13:51.401Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:50.215Z",
+        "completedAt": "2026-10-18T06:13:51.401Z",
+        "path": "/api/access",
+        "status": 403,
+        "serverDate": "Sun, 18 Oct 2026 06:13:51 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": false,
+          "reason": "subject_mismatch"
+        }
+      }
+    },
+    {
+      "label": "forged-public",
+      "recordedAt": "2026-10-18T06:13:52.163Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:51.435Z",
+        "completedAt": "2026-10-18T06:13:52.163Z",
+        "path": "/api/verify?key=0x38ed7691584de4e98e103f7a057cc95855684ca34dceea6abcd7a2b8b4cd8c13&resource=vault-demo",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:13:52 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "decision": {
+            "allowed": false,
+            "reason": "issuer_mismatch"
+          },
+          "creator": "0x5D56708455378d2287464F705D410261b23C08EA",
+          "owner": "0x5D56708455378d2287464F705D410261b23C08EA",
+          "expiresAtBlock": "729229",
+          "subject": "0x642eEB59592F1aB86c72DAE319a1B60A1a521A1D",
+          "resource": "vault-demo",
+          "deadlineMs": 1792308217591
+        }
+      }
+    },
+    {
+      "label": "forged-authenticated:challenge",
+      "recordedAt": "2026-10-18T06:13:52.938Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:13:52.294Z",
+        "serverDate": "Sun, 18 Oct 2026 06:13:53 GMT",
+        "binding": {
+          "key": "0x38ed7691584de4e98e103f7a057cc95855684ca34dceea6abcd7a2b8b4cd8c13",
+          "resource": "vault-demo",
+          "subject": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304033018,
+          "expiresAtMs": 1792304153018
+        }
+      }
+    },
+    {
+      "label": "forged-authenticated",
+      "recordedAt": "2026-10-18T06:13:54.118Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:52.955Z",
+        "completedAt": "2026-10-18T06:13:54.118Z",
+        "path": "/api/access",
+        "status": 403,
+        "serverDate": "Sun, 18 Oct 2026 06:13:54 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": false,
+          "reason": "issuer_mismatch"
+        }
+      }
+    },
+    {
+      "label": "wrong-origin",
+      "recordedAt": "2026-10-18T06:13:54.540Z",
+      "value": {
+        "startedAt": "2026-10-18T06:13:54.171Z",
+        "completedAt": "2026-10-18T06:13:54.540Z",
+        "path": "/api/challenge",
+        "status": 403,
+        "serverDate": "Sun, 18 Oct 2026 06:13:54 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": false,
+          "reason": "audience_mismatch",
+          "error": "The signature challenge is for another site."
+        }
+      }
+    },
+    {
+      "label": "revoked-on-chain",
+      "recordedAt": "2026-10-18T06:14:04.969Z",
+      "value": {
+        "checkedAt": "2026-10-18T06:14:04.533Z",
+        "key": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+        "status": "absent",
+        "error": {
+          "name": "NoEntityFoundError",
+          "message": "Operation failed; raw transport details omitted."
+        }
+      }
+    },
+    {
+      "label": "revoked-public",
+      "recordedAt": "2026-10-18T06:14:06.201Z",
+      "value": {
+        "startedAt": "2026-10-18T06:14:04.987Z",
+        "completedAt": "2026-10-18T06:14:06.201Z",
+        "path": "/api/verify?key=0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9&resource=vault-demo",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:14:06 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "decision": {
+            "allowed": false,
+            "reason": "not_found"
+          }
+        }
+      }
+    },
+    {
+      "label": "revoked-authenticated:challenge",
+      "recordedAt": "2026-10-18T06:14:06.865Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:14:06.216Z",
+        "serverDate": "Sun, 18 Oct 2026 06:14:07 GMT",
+        "binding": {
+          "key": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+          "resource": "vault-demo",
+          "subject": "0xD5C95a39139A0CD48e35aE05b54f0Bca4c5E0830"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304046956,
+          "expiresAtMs": 1792304166956
+        }
+      }
+    },
+    {
+      "label": "revoked-authenticated",
+      "recordedAt": "2026-10-18T06:14:07.853Z",
+      "value": {
+        "startedAt": "2026-10-18T06:14:06.883Z",
+        "completedAt": "2026-10-18T06:14:07.853Z",
+        "path": "/api/access",
+        "status": 403,
+        "serverDate": "Sun, 18 Oct 2026 06:14:08 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": false,
+          "reason": "not_found"
+        }
+      }
+    },
+    {
+      "label": "revocation-events",
+      "recordedAt": "2026-10-18T06:15:18.546Z",
+      "value": [
+        {
+          "eventName": "EntityCreated",
+          "args": {
+            "entityKey": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+            "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+            "expiresAt": "727727",
+            "creationFlags": 1
+          },
+          "blockNumber": "727127",
+          "blockHash": "0x861fddfcac254ca3f584039d1bd09bd84ee8cd9d7cd0f68d1c002f1916d3d2de",
+          "logIndex": "0x2",
+          "transactionHash": "0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+          "transactionSender": "0xce09547fef1362b3711f17747096dcde2535a130",
+          "transactionTo": "0x4400000000000000000000000000000000000044",
+          "receiptStatus": "success",
+          "blockTimestampSeconds": "1792304020",
+          "blockTimestamp": "2026-10-18T06:13:40.000Z",
+          "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+          "rawLog": {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+              "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000b1aaf0000000000000000000000000000000000000000000000000000000000000001",
+            "blockHash": "0x861fddfcac254ca3f584039d1bd09bd84ee8cd9d7cd0f68d1c002f1916d3d2de",
+            "blockNumber": "0xb1857",
+            "blockTimestamp": "0x6ad46394",
+            "transactionHash": "0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+            "transactionIndex": "0x2",
+            "logIndex": "0x2",
+            "removed": false
+          },
+          "transactionInput": "0x49650044000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000620000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000f9cfd21042078bf1870dc4c4b5dfdae300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000258000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000002a0000000000000000000000000000000000000000000000000000000000000034000000000000000000000000000000000000000000000000000000000000003e0000000000000000000000000000000000000000000000000000000000000048024636f6e74656e745479706500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000106170706c69636174696f6e2f6a736f6e00000000000000000000000000000000247061796c6f61640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000bc7b22736368656d61223a226163636573736c656173652f7631222c227375626a656374223a22307844354339356133393133394130434434386533356145303562353466304263613463354530383330222c227265736f75726365223a227661756c742d64656d6f222c2269737375656441744d73223a313739323330343031353439342c226e6f744265666f72654d73223a313739323330343031353439342c22646561646c696e654d73223a313739323330353231353439347d000000006b696e64000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000056c6561736500000000000000000000000000000000000000000000000000000070726f6a656374000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000136163636573736c656173652d323032362d7631000000000000000000000000007265736f7572636500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000a7661756c742d64656d6f000000000000000000000000000000000000000000007375626a6563740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002a30784435433935613339313339413043443438653335614530356235346630426361346335453038333000000000000000000000000000000000000000000000",
+          "receipt": {
+            "type": "eip1559",
+            "status": "success",
+            "cumulativeGasUsed": "227254",
+            "logs": [
+              {
+                "address": "0x4400000000000000000000000000000000000044",
+                "topics": [
+                  "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+                  "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+                  "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+                ],
+                "data": "0x00000000000000000000000000000000000000000000000000000000000b1aaf0000000000000000000000000000000000000000000000000000000000000001",
+                "blockHash": "0x861fddfcac254ca3f584039d1bd09bd84ee8cd9d7cd0f68d1c002f1916d3d2de",
+                "blockNumber": "727127",
+                "blockTimestamp": "1792304020",
+                "transactionHash": "0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+                "transactionIndex": 2,
+                "logIndex": 2,
+                "removed": false
+              }
+            ],
+            "logsBloom": "0x00000000020000000000000000000000000000000002000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000020000000000000000000400000000000000000020000000000000000000200000000000080000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000001000000000",
+            "transactionHash": "0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+            "transactionIndex": 2,
+            "blockHash": "0x861fddfcac254ca3f584039d1bd09bd84ee8cd9d7cd0f68d1c002f1916d3d2de",
+            "blockNumber": "727127",
+            "gasUsed": "103264",
+            "effectiveGasPrice": "1000000002",
+            "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+            "to": "0x4400000000000000000000000000000000000044",
+            "contractAddress": null
+          }
+        },
+        {
+          "eventName": "EntityDeleted",
+          "args": {
+            "entityKey": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+            "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130"
+          },
+          "blockNumber": "727137",
+          "blockHash": "0x22eeedc819ccced4a0a99bd518b552f502f14ba7405bd1133dae4c50cbc7a49a",
+          "logIndex": "0x0",
+          "transactionHash": "0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7",
+          "transactionSender": "0xce09547fef1362b3711f17747096dcde2535a130",
+          "transactionTo": "0x4400000000000000000000000000000000000044",
+          "receiptStatus": "success",
+          "blockTimestampSeconds": "1792304040",
+          "blockTimestamp": "2026-10-18T06:14:00.000Z",
+          "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7",
+          "rawLog": {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0x4059b76c47e1ecc40ba88e649b654f716515eb358c3ce83c803820e3b3130cc3",
+              "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x",
+            "blockHash": "0x22eeedc819ccced4a0a99bd518b552f502f14ba7405bd1133dae4c50cbc7a49a",
+            "blockNumber": "0xb1861",
+            "blockTimestamp": "0x6ad463a8",
+            "transactionHash": "0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7",
+            "transactionIndex": "0x0",
+            "logIndex": "0x0",
+            "removed": false
+          },
+          "transactionInput": "0x496500440000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000005000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000202a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+          "receipt": {
+            "type": "eip1559",
+            "status": "success",
+            "cumulativeGasUsed": "24510",
+            "logs": [
+              {
+                "address": "0x4400000000000000000000000000000000000044",
+                "topics": [
+                  "0x4059b76c47e1ecc40ba88e649b654f716515eb358c3ce83c803820e3b3130cc3",
+                  "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+                  "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+                ],
+                "data": "0x",
+                "blockHash": "0x22eeedc819ccced4a0a99bd518b552f502f14ba7405bd1133dae4c50cbc7a49a",
+                "blockNumber": "727137",
+                "blockTimestamp": "1792304040",
+                "transactionHash": "0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7",
+                "transactionIndex": 0,
+                "logIndex": 0,
+                "removed": false
+              }
+            ],
+            "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000020000000000000000000400000000000000000020000000000000000000200000000000080000000000000000000000000000000000000000000000000000000040000080000000000000000000000000000000000000000000000000000200080000000000000000000000000000000000000000000000001000000000",
+            "transactionHash": "0xb2806a1b4b4cac6fcf680f8299cbbc7f501e3878f014c0568c1614851bdbc3b7",
+            "transactionIndex": 0,
+            "blockHash": "0x22eeedc819ccced4a0a99bd518b552f502f14ba7405bd1133dae4c50cbc7a49a",
+            "blockNumber": "727137",
+            "gasUsed": "24510",
+            "effectiveGasPrice": "1000000002",
+            "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+            "to": "0x4400000000000000000000000000000000000044",
+            "contractAddress": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "deadline-fixture:on-chain-before",
+      "recordedAt": "2026-10-18T06:15:26.429Z",
+      "value": {
+        "checkedAt": "2026-10-18T06:15:25.915Z",
+        "key": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+        "status": "present",
+        "creator": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "creationBlock": "727178",
+        "expiresAtBlock": "727208",
+        "headBlock": "727180",
+        "creationFlags": {
+          "readonly": true,
+          "permissionlessExtension": false,
+          "raw": 1
+        },
+        "attributes": {
+          "kind": {
+            "type": "str",
+            "value": "lease"
+          },
+          "project": {
+            "type": "str",
+            "value": "accesslease-2026-v1"
+          },
+          "resource": {
+            "type": "str",
+            "value": "vault-demo"
+          },
+          "subject": {
+            "type": "str",
+            "value": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F"
+          }
+        },
+        "payload": {
+          "schema": "accesslease/v1",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F",
+          "resource": "vault-demo",
+          "issuedAtMs": 1792304118570,
+          "notBeforeMs": 1792304118570,
+          "deadlineMs": 1792304178570
+        },
+        "localPolicy": {
+          "allowed": true,
+          "reason": "allowed"
+        }
+      }
+    },
+    {
+      "label": "before-deadline-authenticated:challenge",
+      "recordedAt": "2026-10-18T06:15:29.362Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:15:26.454Z",
+        "serverDate": "Sun, 18 Oct 2026 06:15:28 GMT",
+        "binding": {
+          "key": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+          "resource": "vault-demo",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304128673,
+          "expiresAtMs": 1792304248673
+        }
+      }
+    },
+    {
+      "label": "before-deadline-authenticated",
+      "recordedAt": "2026-10-18T06:15:30.998Z",
+      "value": {
+        "startedAt": "2026-10-18T06:15:29.532Z",
+        "completedAt": "2026-10-18T06:15:30.998Z",
+        "path": "/api/access",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:15:31 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": true,
+          "reason": "allowed",
+          "resource": "vault-demo",
+          "data": "SYNTHETIC: Incident vault report #AL-104 · No real confidential information."
+        }
+      }
+    },
+    {
+      "label": "deadline-after-storage-extension",
+      "recordedAt": "2026-10-18T06:15:37.281Z",
+      "value": {
+        "checkedAt": "2026-10-18T06:15:36.751Z",
+        "key": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+        "status": "present",
+        "creator": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "creationBlock": "727178",
+        "expiresAtBlock": "727485",
+        "headBlock": "727185",
+        "creationFlags": {
+          "readonly": true,
+          "permissionlessExtension": false,
+          "raw": 1
+        },
+        "attributes": {
+          "kind": {
+            "type": "str",
+            "value": "lease"
+          },
+          "project": {
+            "type": "str",
+            "value": "accesslease-2026-v1"
+          },
+          "resource": {
+            "type": "str",
+            "value": "vault-demo"
+          },
+          "subject": {
+            "type": "str",
+            "value": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F"
+          }
+        },
+        "payload": {
+          "schema": "accesslease/v1",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F",
+          "resource": "vault-demo",
+          "issuedAtMs": 1792304118570,
+          "notBeforeMs": 1792304118570,
+          "deadlineMs": 1792304178570
+        },
+        "localPolicy": {
+          "allowed": true,
+          "reason": "allowed"
+        }
+      }
+    },
+    {
+      "label": "retention-fixture:on-chain-before",
+      "recordedAt": "2026-10-18T06:15:42.052Z",
+      "value": {
+        "checkedAt": "2026-10-18T06:15:41.471Z",
+        "key": "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+        "status": "present",
+        "creator": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "creationBlock": "727187",
+        "expiresAtBlock": "727217",
+        "headBlock": "727188",
+        "creationFlags": {
+          "readonly": true,
+          "permissionlessExtension": false,
+          "raw": 1
+        },
+        "attributes": {
+          "kind": {
+            "type": "str",
+            "value": "lease"
+          },
+          "project": {
+            "type": "str",
+            "value": "accesslease-2026-v1"
+          },
+          "resource": {
+            "type": "str",
+            "value": "vault-demo"
+          },
+          "subject": {
+            "type": "str",
+            "value": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F"
+          }
+        },
+        "payload": {
+          "schema": "accesslease/v1",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F",
+          "resource": "vault-demo",
+          "issuedAtMs": 1792304137469,
+          "notBeforeMs": 1792304137469,
+          "deadlineMs": 1792304197469
+        },
+        "localPolicy": {
+          "allowed": true,
+          "reason": "allowed"
+        }
+      }
+    },
+    {
+      "label": "before-retention-expiry-authenticated:challenge",
+      "recordedAt": "2026-10-18T06:15:43.710Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:15:42.076Z",
+        "serverDate": "Sun, 18 Oct 2026 06:15:43 GMT",
+        "binding": {
+          "key": "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+          "resource": "vault-demo",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304143672,
+          "expiresAtMs": 1792304263672
+        }
+      }
+    },
+    {
+      "label": "before-retention-expiry-authenticated",
+      "recordedAt": "2026-10-18T06:15:45.208Z",
+      "value": {
+        "startedAt": "2026-10-18T06:15:43.742Z",
+        "completedAt": "2026-10-18T06:15:45.208Z",
+        "path": "/api/access",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:15:45 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": true,
+          "reason": "allowed",
+          "resource": "vault-demo",
+          "data": "SYNTHETIC: Incident vault report #AL-104 · No real confidential information."
+        }
+      }
+    },
+    {
+      "label": "expired-deadline-on-chain",
+      "recordedAt": "2026-10-18T06:16:41.348Z",
+      "value": {
+        "checkedAt": "2026-10-18T06:16:40.731Z",
+        "key": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+        "status": "present",
+        "creator": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+        "creationBlock": "727178",
+        "expiresAtBlock": "727485",
+        "headBlock": "727217",
+        "creationFlags": {
+          "readonly": true,
+          "permissionlessExtension": false,
+          "raw": 1
+        },
+        "attributes": {
+          "kind": {
+            "type": "str",
+            "value": "lease"
+          },
+          "project": {
+            "type": "str",
+            "value": "accesslease-2026-v1"
+          },
+          "resource": {
+            "type": "str",
+            "value": "vault-demo"
+          },
+          "subject": {
+            "type": "str",
+            "value": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F"
+          }
+        },
+        "payload": {
+          "schema": "accesslease/v1",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F",
+          "resource": "vault-demo",
+          "issuedAtMs": 1792304118570,
+          "notBeforeMs": 1792304118570,
+          "deadlineMs": 1792304178570
+        },
+        "localPolicy": {
+          "allowed": false,
+          "reason": "deadline_passed"
+        }
+      }
+    },
+    {
+      "label": "expired-deadline-public",
+      "recordedAt": "2026-10-18T06:16:42.876Z",
+      "value": {
+        "startedAt": "2026-10-18T06:16:41.366Z",
+        "completedAt": "2026-10-18T06:16:42.875Z",
+        "path": "/api/verify?key=0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa&resource=vault-demo",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:16:43 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "decision": {
+            "allowed": false,
+            "reason": "deadline_passed"
+          },
+          "creator": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+          "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+          "expiresAtBlock": "727485",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F",
+          "resource": "vault-demo",
+          "deadlineMs": 1792304178570
+        }
+      }
+    },
+    {
+      "label": "expired-deadline-authenticated:challenge",
+      "recordedAt": "2026-10-18T06:16:43.537Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:16:42.907Z",
+        "serverDate": "Sun, 18 Oct 2026 06:16:43 GMT",
+        "binding": {
+          "key": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+          "resource": "vault-demo",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304203616,
+          "expiresAtMs": 1792304323616
+        }
+      }
+    },
+    {
+      "label": "expired-deadline-authenticated",
+      "recordedAt": "2026-10-18T06:16:44.712Z",
+      "value": {
+        "startedAt": "2026-10-18T06:16:43.563Z",
+        "completedAt": "2026-10-18T06:16:44.712Z",
+        "path": "/api/access",
+        "status": 403,
+        "serverDate": "Sun, 18 Oct 2026 06:16:45 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": false,
+          "reason": "deadline_passed"
+        }
+      }
+    },
+    {
+      "label": "expired-retention-on-chain",
+      "recordedAt": "2026-10-18T06:16:45.069Z",
+      "value": {
+        "checkedAt": "2026-10-18T06:16:44.735Z",
+        "key": "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+        "status": "absent",
+        "error": {
+          "name": "NoEntityFoundError",
+          "message": "Operation failed; raw transport details omitted."
+        }
+      }
+    },
+    {
+      "label": "expired-retention-public",
+      "recordedAt": "2026-10-18T06:16:45.683Z",
+      "value": {
+        "startedAt": "2026-10-18T06:16:45.084Z",
+        "completedAt": "2026-10-18T06:16:45.683Z",
+        "path": "/api/verify?key=0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627&resource=vault-demo",
+        "status": 200,
+        "serverDate": "Sun, 18 Oct 2026 06:16:46 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "decision": {
+            "allowed": false,
+            "reason": "not_found"
+          }
+        }
+      }
+    },
+    {
+      "label": "expired-retention-authenticated:challenge",
+      "recordedAt": "2026-10-18T06:16:46.364Z",
+      "value": {
+        "status": 200,
+        "startedAt": "2026-10-18T06:16:45.699Z",
+        "serverDate": "Sun, 18 Oct 2026 06:16:46 GMT",
+        "binding": {
+          "key": "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+          "resource": "vault-demo",
+          "subject": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F"
+        },
+        "challenge": {
+          "origin": "https://accesslease-three.vercel.app",
+          "issuedAtMs": 1792304206427,
+          "expiresAtMs": 1792304326427
+        }
+      }
+    },
+    {
+      "label": "expired-retention-authenticated",
+      "recordedAt": "2026-10-18T06:16:47.419Z",
+      "value": {
+        "startedAt": "2026-10-18T06:16:46.383Z",
+        "completedAt": "2026-10-18T06:16:47.419Z",
+        "path": "/api/access",
+        "status": 403,
+        "serverDate": "Sun, 18 Oct 2026 06:16:47 GMT",
+        "cacheControl": "no-store",
+        "body": {
+          "allowed": false,
+          "reason": "not_found"
+        }
+      }
+    },
+    {
+      "label": "deadline-events",
+      "recordedAt": "2026-10-18T06:16:49.389Z",
+      "value": [
+        {
+          "eventName": "EntityCreated",
+          "args": {
+            "entityKey": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+            "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+            "expiresAt": "727208",
+            "creationFlags": 1
+          },
+          "blockNumber": "727178",
+          "blockHash": "0x4e30d98739f0dc7f2feeb75bc56bae018559f79d0683fc7d535291f64de07d03",
+          "logIndex": "0x0",
+          "transactionHash": "0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+          "transactionSender": "0xce09547fef1362b3711f17747096dcde2535a130",
+          "transactionTo": "0x4400000000000000000000000000000000000044",
+          "receiptStatus": "success",
+          "blockTimestampSeconds": "1792304122",
+          "blockTimestamp": "2026-10-18T06:15:22.000Z",
+          "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+          "rawLog": {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+              "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000b18a80000000000000000000000000000000000000000000000000000000000000001",
+            "blockHash": "0x4e30d98739f0dc7f2feeb75bc56bae018559f79d0683fc7d535291f64de07d03",
+            "blockNumber": "0xb188a",
+            "blockTimestamp": "0x6ad463fa",
+            "transactionHash": "0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+            "transactionIndex": "0x0",
+            "logIndex": "0x0",
+            "removed": false
+          },
+          "transactionInput": "0x4965004400000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000062000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000063481fa827b74934f1ead831533fbf890000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000002a0000000000000000000000000000000000000000000000000000000000000034000000000000000000000000000000000000000000000000000000000000003e0000000000000000000000000000000000000000000000000000000000000048024636f6e74656e745479706500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000106170706c69636174696f6e2f6a736f6e00000000000000000000000000000000247061796c6f61640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000bc7b22736368656d61223a226163636573736c656173652f7631222c227375626a656374223a22307839623439363734334433354239466636314332453135343538613662306332426637363632613046222c227265736f75726365223a227661756c742d64656d6f222c2269737375656441744d73223a313739323330343131383537302c226e6f744265666f72654d73223a313739323330343131383537302c22646561646c696e654d73223a313739323330343137383537307d000000006b696e64000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000056c6561736500000000000000000000000000000000000000000000000000000070726f6a656374000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000136163636573736c656173652d323032362d7631000000000000000000000000007265736f7572636500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000a7661756c742d64656d6f000000000000000000000000000000000000000000007375626a6563740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002a30783962343936373433443335423946663631433245313534353861366230633242663736363261304600000000000000000000000000000000000000000000",
+          "receipt": {
+            "type": "eip1559",
+            "status": "success",
+            "cumulativeGasUsed": "103264",
+            "logs": [
+              {
+                "address": "0x4400000000000000000000000000000000000044",
+                "topics": [
+                  "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+                  "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+                  "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+                ],
+                "data": "0x00000000000000000000000000000000000000000000000000000000000b18a80000000000000000000000000000000000000000000000000000000000000001",
+                "blockHash": "0x4e30d98739f0dc7f2feeb75bc56bae018559f79d0683fc7d535291f64de07d03",
+                "blockNumber": "727178",
+                "blockTimestamp": "1792304122",
+                "transactionHash": "0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+                "transactionIndex": 0,
+                "logIndex": 0,
+                "removed": false
+              }
+            ],
+            "logsBloom": "0x00000000020000000002000000000000000000000002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000200000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000020000000000000000000200000000000080000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000",
+            "transactionHash": "0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+            "transactionIndex": 0,
+            "blockHash": "0x4e30d98739f0dc7f2feeb75bc56bae018559f79d0683fc7d535291f64de07d03",
+            "blockNumber": "727178",
+            "gasUsed": "103264",
+            "effectiveGasPrice": "1000000002",
+            "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+            "to": "0x4400000000000000000000000000000000000044",
+            "contractAddress": null
+          }
+        },
+        {
+          "eventName": "ExpiryExtended",
+          "args": {
+            "entityKey": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+            "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+            "expiresAt": "727485"
+          },
+          "blockNumber": "727185",
+          "blockHash": "0x18ce95df7caee057421565f0dfa2c78ac28c39dc1feccf0a93d2431404abbf70",
+          "logIndex": "0x2",
+          "transactionHash": "0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961",
+          "transactionSender": "0xce09547fef1362b3711f17747096dcde2535a130",
+          "transactionTo": "0x4400000000000000000000000000000000000044",
+          "receiptStatus": "success",
+          "blockTimestampSeconds": "1792304136",
+          "blockTimestamp": "2026-10-18T06:15:36.000Z",
+          "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961",
+          "rawLog": {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0x10dc3526654c9ba4e2370b1bfcbc0de087d141a5694b3d3305d37df7e6705d4b",
+              "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000b19bd",
+            "blockHash": "0x18ce95df7caee057421565f0dfa2c78ac28c39dc1feccf0a93d2431404abbf70",
+            "blockNumber": "0xb1891",
+            "blockTimestamp": "0x6ad46408",
+            "transactionHash": "0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961",
+            "transactionIndex": "0x2",
+            "logIndex": "0x2",
+            "removed": false
+          },
+          "transactionInput": "0x4965004400000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000006052be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000012c",
+          "receipt": {
+            "type": "eip1559",
+            "status": "success",
+            "cumulativeGasUsed": "149170",
+            "logs": [
+              {
+                "address": "0x4400000000000000000000000000000000000044",
+                "topics": [
+                  "0x10dc3526654c9ba4e2370b1bfcbc0de087d141a5694b3d3305d37df7e6705d4b",
+                  "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+                  "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+                ],
+                "data": "0x00000000000000000000000000000000000000000000000000000000000b19bd",
+                "blockHash": "0x18ce95df7caee057421565f0dfa2c78ac28c39dc1feccf0a93d2431404abbf70",
+                "blockNumber": "727185",
+                "blockTimestamp": "1792304136",
+                "transactionHash": "0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961",
+                "transactionIndex": 2,
+                "logIndex": 2,
+                "removed": false
+              }
+            ],
+            "logsBloom": "0x00000000000000000002000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000200000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000020100000000000000000200000000000080000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000",
+            "transactionHash": "0x62e9235488cc96eb94bf6d975d253af7a8a1efd9d279ddd76ee2885c31352961",
+            "transactionIndex": 2,
+            "blockHash": "0x18ce95df7caee057421565f0dfa2c78ac28c39dc1feccf0a93d2431404abbf70",
+            "blockNumber": "727185",
+            "gasUsed": "25180",
+            "effectiveGasPrice": "1000000002",
+            "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+            "to": "0x4400000000000000000000000000000000000044",
+            "contractAddress": null
+          }
+        }
+      ]
+    },
+    {
+      "label": "retention-events",
+      "recordedAt": "2026-10-18T06:16:50.157Z",
+      "value": [
+        {
+          "eventName": "EntityCreated",
+          "args": {
+            "entityKey": "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+            "owner": "0xCe09547FEf1362b3711f17747096dCde2535a130",
+            "expiresAt": "727217",
+            "creationFlags": 1
+          },
+          "blockNumber": "727187",
+          "blockHash": "0xaca6fcc00b8394070578eb18264af994b701da357c14eb23a2f62f5edbd836c2",
+          "logIndex": "0x2",
+          "transactionHash": "0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+          "transactionSender": "0xce09547fef1362b3711f17747096dcde2535a130",
+          "transactionTo": "0x4400000000000000000000000000000000000044",
+          "receiptStatus": "success",
+          "blockTimestampSeconds": "1792304140",
+          "blockTimestamp": "2026-10-18T06:15:40.000Z",
+          "explorerTransactionUrl": "https://tiramisu.explorer.arkiv.network/tx/0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+          "rawLog": {
+            "address": "0x4400000000000000000000000000000000000044",
+            "topics": [
+              "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+              "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+              "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+            ],
+            "data": "0x00000000000000000000000000000000000000000000000000000000000b18b10000000000000000000000000000000000000000000000000000000000000001",
+            "blockHash": "0xaca6fcc00b8394070578eb18264af994b701da357c14eb23a2f62f5edbd836c2",
+            "blockNumber": "0xb1893",
+            "blockTimestamp": "0x6ad4640c",
+            "transactionHash": "0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+            "transactionIndex": "0x2",
+            "logIndex": "0x2",
+            "removed": false
+          },
+          "transactionInput": "0x49650044000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000620000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000f46ed73d823415e650ddff3fdd2a00ef0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001e000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000a0000000000000000000000000000000000000000000000000000000000000000600000000000000000000000000000000000000000000000000000000000000c0000000000000000000000000000000000000000000000000000000000000016000000000000000000000000000000000000000000000000000000000000002a0000000000000000000000000000000000000000000000000000000000000034000000000000000000000000000000000000000000000000000000000000003e0000000000000000000000000000000000000000000000000000000000000048024636f6e74656e745479706500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000106170706c69636174696f6e2f6a736f6e00000000000000000000000000000000247061796c6f61640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000bc7b22736368656d61223a226163636573736c656173652f7631222c227375626a656374223a22307839623439363734334433354239466636314332453135343538613662306332426637363632613046222c227265736f75726365223a227661756c742d64656d6f222c2269737375656441744d73223a313739323330343133373436392c226e6f744265666f72654d73223a313739323330343133373436392c22646561646c696e654d73223a313739323330343139373436397d000000006b696e64000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000056c6561736500000000000000000000000000000000000000000000000000000070726f6a656374000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000136163636573736c656173652d323032362d7631000000000000000000000000007265736f7572636500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000a7661756c742d64656d6f000000000000000000000000000000000000000000007375626a6563740000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002a30783962343936373433443335423946663631433245313534353861366230633242663736363261304600000000000000000000000000000000000000000000",
+          "receipt": {
+            "type": "eip1559",
+            "status": "success",
+            "cumulativeGasUsed": "227254",
+            "logs": [
+              {
+                "address": "0x4400000000000000000000000000000000000044",
+                "topics": [
+                  "0xb282d7c494b8899aa8015cd07be621530beb03409eb8c5e8fdc1411ba64356a5",
+                  "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+                  "0x000000000000000000000000ce09547fef1362b3711f17747096dcde2535a130"
+                ],
+                "data": "0x00000000000000000000000000000000000000000000000000000000000b18b10000000000000000000000000000000000000000000000000000000000000001",
+                "blockHash": "0xaca6fcc00b8394070578eb18264af994b701da357c14eb23a2f62f5edbd836c2",
+                "blockNumber": "727187",
+                "blockTimestamp": "1792304140",
+                "transactionHash": "0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+                "transactionIndex": 2,
+                "logIndex": 2,
+                "removed": false
+              }
+            ],
+            "logsBloom": "0x00000000020000000000000000000000000000000002000000000004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000400000000000000000020000000000000000000200000000000080000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000001000000000",
+            "transactionHash": "0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+            "transactionIndex": 2,
+            "blockHash": "0xaca6fcc00b8394070578eb18264af994b701da357c14eb23a2f62f5edbd836c2",
+            "blockNumber": "727187",
+            "gasUsed": "103264",
+            "effectiveGasPrice": "1000000002",
+            "from": "0xce09547fef1362b3711f17747096dcde2535a130",
+            "to": "0x4400000000000000000000000000000000000044",
+            "contractAddress": null
+          }
+        }
+      ]
+    }
+  ],
+  "fixtures": {
+    "revocation-fixture": {
+      "txHash": "0xda1cdb932551533f762b12e7fed0db219d01e3e40c75ae6bb36fc43a42c2ef29",
+      "entityKey": "0x2a0f74d3b124c9ceba41688a25430e194081babe93ea37a8e6d2d7e9975cb6d9",
+      "expiresAt": "727727"
+    },
+    "deadline-fixture": {
+      "txHash": "0x193e389467a0bccea0c21d5753918e06e6d57a93a12fbe5937f49ed2bf1e1c94",
+      "entityKey": "0x52be4b92b9778ec3a99e76cde817f512cd2b610078d4b9f4294d05dc9e4f89aa",
+      "expiresAt": "727208"
+    },
+    "retention-fixture": {
+      "txHash": "0x203c8798d258ecd3ed6d439470fbb1b1eb6c7d124bafe0f4022bbf94a10655af",
+      "entityKey": "0x58ea1c95342387420cadc4a09295a6464771035b09aedda3b9dc226896b02627",
+      "expiresAt": "727217"
+    }
+  },
+  "chainId": 7738577,
+  "expirationRecipient": "0x9b496743D35B9Ff61C2E15458a6b0c2Bf7662a0F",
+  "resumedAt": "2026-10-18T06:15:13.571Z",
+  "previousAttemptError": {
+    "name": "InvalidParamsRpcError",
+    "message": "Invalid parameters were provided to the RPC method.\nDouble check you have provided the correct parameters."
+  },
+  "completedAt": "2026-10-18T06:16:50.187Z"
+}

@@ -1,0 +1,5 @@
+# Keep evidence hashes reproducible across Windows and Unix checkouts.
+arkiv/evidence/** text eol=lf
+artifacts/demo/*.srt text eol=lf
+artifacts/demo/*.md text eol=lf
+artifacts/demo/*.mp4 binary

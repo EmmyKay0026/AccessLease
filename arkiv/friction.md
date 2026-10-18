@@ -1,45 +1,20 @@
-# Arkiv implementation friction log
+# Arkiv implementation friction — verified 18 October 2026
 
-> This file is a factual log. **Do not invent issues, successful on-chain transactions, or test results.** Fill the network evidence fields only after performing the corresponding experiment.
+Measured environment: Node v22.13.1, Arkiv SDK 0.8.1, viem 2.57.7, Tiramisu chain ID 7738577. [Full evidence](../docs/SECURITY_EVIDENCE.md). These observations supersede the old pending network-experiment entries.
 
-## Local (verified on 14 October 2026)
+| Surface | Expected | Actual, with reproduction | Result |
+| --- | --- | --- | --- |
+| SDK create/getEntity | Immutable, scoped record with authoritative creator | Create a readonly lease with the existing CLI; getEntity exposes creator, owner, flags, createdAt and expiresAt. Four prior creation receipts recovered; three new grants confirmed. | Verified |
+| Creator-filtered query | Only trusted issuer appears in discovery | GET /api/discover used `.createdBy(issuer)`; returned the trusted production grant and its block number. Copied project/subject/resource fields did not authenticate the attacker. | Verified |
+| Authentic publisher | Forged metadata cannot impersonate issuer | The production forged grant's creator was `0x5D56708455378d2287464F705D410261b23C08EA`; public verification and signed access returned issuer_mismatch. | Verified |
+| Readonly lifetime extension | Fixed access cutoff despite longer storage | Owner successfully extended a readonly entity's expiry from 727208 to 727485; immutable payload/deadline stayed unchanged. A later signed request denied deadline_passed while the entity remained live. | Verified |
+| Expiration | Fresh reads stop returning expired entities | Create a 60-second lease, observe signed access, wait for wall clock and live chain height, then getEntity returns NoEntityFoundError and signed access returns 403/not_found. No expiry event is needed. | Verified |
+| Deletion | Owner revocation denies immediately after inclusion/read | Delete only the new fixture. Successful receipt and EntityDeleted link the deletion to the same key; fresh signed request returns 403/not_found. | Verified |
+| Direct JSON-RPC history | Recover creation transaction separately from entity key | An unbounded genesis-to-head eth_getLogs request returned InvalidParamsRpcError. Key-filtered backward windows of at most 100,000 blocks succeeded. `scripts/collect-evidence.ts` records raw logs, calldata, receipts and block timestamps. | Reproduced query limit |
+| Entity history after expiry | Preserve enough evidence to audit issuance | Both old local sample keys were absent. Their creation logs, transaction senders and decoded payloads were recoverable from transaction history, but fresh system creator/owner reads were unavailable. | Verified limitation |
 
-- Runtime: Node 22.16.0, npm 10.9.2.
-- `npm test`: 12 policy test cases passed (pure TypeScript, independent of RPC).
-- Arkiv SDK installation: **not yet run in this environment** (registry access timed out).
-- Live Tiramisu entity creation/read and wallet operations: **not yet run**.
+**Suggested improvement:** document that `readonly` freezes content, not the owner's ability to extend storage. Include an authorization example with an immutable application deadline and a fail-closed fresh lookup. Also document eth_getLogs range limits beside a small key-filtered history example, and clearly distinguish `createdAt` block height, consensus block timestamp and issuer-supplied payload time.
 
-## Documentation-level findings (not claimed as measured runtime bugs)
+**Reproduce:** run the read-only collection and offline validation commands in [SECURITY_EVIDENCE.md](../docs/SECURITY_EVIDENCE.md). For new lifecycle experiments, use the guarded transaction script with dedicated testnet wallets. Commands, exact keys, hashes, versions and before/after values are in the evidence JSON.
 
-### F-01: Read-only does not pin the expiry
-
-- Surface: Docs → Mutating data → Creation flags / Lifetime extension.
-- Expected for our application: An access cutoff fixed when the authorization is issued.
-- Documented behavior: An owner can extend the lifetime of a `readonly` entity. The flag freezes only attributes and payload.
-- Product response: Encode `deadlineMs` in the immutable payload and check it separately from `$expiresAt`.
-- Reproduce: Create a `readonly` entity and call `extendEntity()` as the owner. Inspect `$expiresAt` and confirm the immutable payload did not change.
-- Observed Tiramisu result: **PENDING**.
-- Improvement suggestion: Add a prominent security note explaining that `readonly` is not an immutable expiration policy.
-
-### F-02: Expiration has no event
-
-- Surface: Docs → Fundamentals → Expiration.
-- Expected: A lease gate must reject expired records without relying on an event callback.
-- Documented behavior: No expiry event is emitted; queries stop returning the entity when it expires.
-- Product response: Read Arkiv for every synthetic protected-resource request and fail closed on missing/unavailable records.
-- Reproduce: Create a short-lived test entity; query before and after its expiration.
-- Observed Tiramisu result: **PENDING**.
-- Improvement suggestion: Provide a canonical lease-check example covering RPC failures and block-height expiry.
-
-## Live experiments required before submission
-
-| Test | Expected | Actual | SDK/version | Entity key / TX hash |
-|---|---|---|---|---|
-| Trusted read-only grant | ALLOW for correct wallet/scope | PENDING | PENDING | PENDING |
-| Wrong `$creator` with matching metadata | DENY | PENDING | PENDING | PENDING |
-| Scope mismatch | DENY | PENDING | PENDING | PENDING |
-| Deadline after Arkiv storage extension | DENY | PENDING | PENDING | PENDING |
-| Revoke by deletion | DENY after confirmation | PENDING | PENDING | PENDING |
-| Unreachable RPC | fail closed | PENDING | PENDING | n/a |
-
-For each live experiment, record commands, expected vs actual, SDK/Node versions, the transaction/entity IDs, and the smallest reproduction steps. The judges award points for accurate friction reports, not fabricated complaints.
+**Not measured on-chain:** rejecting a patch to a readonly record. **Not induced in production:** RPC/Redis outage. Their source/unit coverage is not substituted for a live experiment. Browser/MetaMask capture was unavailable in this session. No SDK package installation failure is asserted as current behavior.

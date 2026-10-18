@@ -1,0 +1,107 @@
+{
+  "checkedAt": "2026-10-18T06:19:06.852Z",
+  "observationsChecked": 16,
+  "chainId": 7738577,
+  "creationTransactionsVerified": 4,
+  "lifecycleTransactionsVerified": 5,
+  "immutableDeadlineSurvivedStorageExtension": true,
+  "responses": [
+    {
+      "name": "authenticated-allow",
+      "status": 200,
+      "reason": "allowed",
+      "startedAt": "2026-10-18T06:13:44.740Z"
+    },
+    {
+      "name": "authenticated-allow:replay",
+      "status": 403,
+      "reason": "challenge_used",
+      "startedAt": "2026-10-18T06:13:46.035Z"
+    },
+    {
+      "name": "wrong-scope-public",
+      "status": 200,
+      "reason": "resource_mismatch",
+      "startedAt": "2026-10-18T06:13:46.662Z"
+    },
+    {
+      "name": "wrong-scope-authenticated",
+      "status": 403,
+      "reason": "resource_mismatch",
+      "startedAt": "2026-10-18T06:13:48.098Z"
+    },
+    {
+      "name": "wrong-recipient-authenticated",
+      "status": 403,
+      "reason": "subject_mismatch",
+      "startedAt": "2026-10-18T06:13:50.215Z"
+    },
+    {
+      "name": "forged-public",
+      "status": 200,
+      "reason": "issuer_mismatch",
+      "startedAt": "2026-10-18T06:13:51.435Z"
+    },
+    {
+      "name": "forged-authenticated",
+      "status": 403,
+      "reason": "issuer_mismatch",
+      "startedAt": "2026-10-18T06:13:52.955Z"
+    },
+    {
+      "name": "wrong-origin",
+      "status": 403,
+      "reason": "audience_mismatch",
+      "startedAt": "2026-10-18T06:13:54.171Z"
+    },
+    {
+      "name": "revoked-public",
+      "status": 200,
+      "reason": "not_found",
+      "startedAt": "2026-10-18T06:14:04.987Z"
+    },
+    {
+      "name": "revoked-authenticated",
+      "status": 403,
+      "reason": "not_found",
+      "startedAt": "2026-10-18T06:14:06.883Z"
+    },
+    {
+      "name": "before-deadline-authenticated",
+      "status": 200,
+      "reason": "allowed",
+      "startedAt": "2026-10-18T06:15:29.532Z"
+    },
+    {
+      "name": "before-retention-expiry-authenticated",
+      "status": 200,
+      "reason": "allowed",
+      "startedAt": "2026-10-18T06:15:43.742Z"
+    },
+    {
+      "name": "expired-deadline-public",
+      "status": 200,
+      "reason": "deadline_passed",
+      "startedAt": "2026-10-18T06:16:41.366Z"
+    },
+    {
+      "name": "expired-deadline-authenticated",
+      "status": 403,
+      "reason": "deadline_passed",
+      "startedAt": "2026-10-18T06:16:43.563Z"
+    },
+    {
+      "name": "expired-retention-public",
+      "status": 200,
+      "reason": "not_found",
+      "startedAt": "2026-10-18T06:16:45.084Z"
+    },
+    {
+      "name": "expired-retention-authenticated",
+      "status": 403,
+      "reason": "not_found",
+      "startedAt": "2026-10-18T06:16:46.383Z"
+    }
+  ],
+  "result": "pass"
+}

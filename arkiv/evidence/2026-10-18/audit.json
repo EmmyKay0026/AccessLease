@@ -1,0 +1,26 @@
+{
+  "observedDate": "2026-10-18",
+  "command": "npm audit --json",
+  "exitCode": 0,
+  "auditReportVersion": 2,
+  "vulnerabilities": {},
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "dependencies": {
+      "prod": 34,
+      "dev": 32,
+      "optional": 66,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 104
+    }
+  },
+  "provenance": "Public registry response captured during this session; no credentials recorded."
+}

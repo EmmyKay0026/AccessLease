@@ -10,7 +10,7 @@ AccessLease is a **security-track hackathon MVP**, built 14 October 2026 for the
 - ✅ Server-side policy: trusted `$creator` and `$owner`, read-only flags, scoped subject and resource, separate immutable deadline, live block check, fail-closed behavior.
 - ✅ Admin CLI: grant, impersonation attack, revoke.
 - ✅ Expanded policy, signature, replay, API and wallet-flow tests; see the completion report for final counts.
-- ✅ Production build and a read-only Tiramisu sample-policy check verified on 17 October 2026. Actual MetaMask signing against shared Redis still requires operator setup and manual verification; no transactions were submitted.
+- ✅ On 18 October: 75 tests, successful build, zero npm audit findings; fresh production signed access/replay checks, real Tiramisu deletion, storage extension and expiration verified. See [permanent security evidence](docs/SECURITY_EVIDENCE.md). Browser/MetaMask UI was not reverified in that capture.
 - ⚠️ Demo only. Not a production authorization provider. See security limits below.
 
 ## Product documentation
@@ -165,11 +165,13 @@ docs/COMPLETION_REPORT.md  Fixes, results and remaining verification limits
 - [x] Security-track code using immutable creator verification
 - [x] Local automated policy tests
 - [x] `npm install` + `npm run build` executed successfully
-- [ ] Live creation, read, forged-creator denial, revocation on Tiramisu independently verified
-- [ ] On-chain issuer and attacker addresses and transaction hashes recorded
-- [ ] Public deployment accessible without credentials
-- [ ] Reproduction from public app verified
+- [x] Live creation, read, forged-creator denial, revocation and expiration on Tiramisu independently verified
+- [x] On-chain issuer and attacker addresses and transaction hashes recorded
+- [x] Public deployment accessible without credentials
+- [x] Production HTTP flow verified with disposable wallet signatures; MetaMask UI capture remains manual
 - [ ] <= 3 minute video published
 - [ ] Devfolio form completed by October 18, 2026, 23:59 Nigeria time
+
+Submission materials: [security evidence](docs/SECURITY_EVIDENCE.md), [QA](docs/QA_RESULTS.md), [2:54 demonstration package](docs/DEMO.md), and [submission text](docs/SUBMISSION.md). Creation transaction hashes are linked separately from entity keys. Historical receipts survive grant expiry; the live samples intentionally stop authorizing at their fixed deadlines.
 
 **Official references:** [Arkiv hackathon rules](https://github.com/Arkiv-Network/global-tour-stop-pre-devcon), [SDK docs](https://docs.arkiv.network/), [security scoring rubric](https://github.com/Arkiv-Network/global-tour-stop-pre-devcon/blob/main/docs/scoring-rubric.md).

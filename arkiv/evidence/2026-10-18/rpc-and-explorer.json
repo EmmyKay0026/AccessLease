@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-18T06:28:42.024Z",
+  "unboundedLogRequest": {
+    "name": "InvalidParamsRpcError",
+    "shortMessage": "Invalid parameters were provided to the RPC method.\nDouble check you have provided the correct parameters.",
+    "details": "query exceeds max block range 100000"
+  },
+  "explorer": [
+    {
+      "url": "https://tiramisu.explorer.arkiv.network/tx/0x3de71dfae34c5f9ae622c7a04e8c7d186416c137169864e97c54afcb4baa881b",
+      "status": 200
+    },
+    {
+      "url": "https://tiramisu.explorer.arkiv.network/tx/0xe9d4dc9ae94b8c885100647da6c50dbb3c4906aefe5769af4c6e229c5caa6242",
+      "status": 200
+    }
+  ]
+}

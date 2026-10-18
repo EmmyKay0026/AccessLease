@@ -8,4 +8,14 @@ out/
 .DS_Store
 *.tsbuildinfo
 # Local reports only; src/app/docs is application source.
-/docs/
+/docs/*
+!/docs/AUTHENTICATION.md
+!/docs/SECURITY_EVIDENCE.md
+!/docs/DEMO.md
+!/docs/SUBMISSION.md
+!/docs/QA_RESULTS.md
+# Reproducible demo intermediates; final MP4 and captions are retained.
+/artifacts/demo/frames/
+/artifacts/demo/audio/
+/artifacts/demo/segments/
+/artifacts/demo/concat.txt

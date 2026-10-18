@@ -1,0 +1,159 @@
+1
+00:00:00,000 --> 00:00:04,001
+AccessLease grants temporary, resource scoped permission backed by public Arkiv records.
+
+2
+00:00:04,001 --> 00:00:08,001
+A contractor signs a single use wallet challenge before the gateway
+
+3
+00:00:08,001 --> 00:00:12,002
+returns a synthetic incident vault. This evidence walkthrough uses real Tiramisu
+
+4
+00:00:12,002 --> 00:00:16,002
+receipts and fresh production responses captured on October eighteenth. It is
+
+5
+00:00:16,002 --> 00:00:20,003
+a narrated record of those observations, with no browser or MetaMask
+
+6
+00:00:20,003 --> 00:00:20,730
+interaction claimed.
+
+7
+00:00:24,000 --> 00:00:27,941
+These are the existing production examples. The trusted grant and forged
+
+8
+00:00:27,941 --> 00:00:31,881
+grant use the same recipient and resource. Their on chain creators
+
+9
+00:00:31,881 --> 00:00:35,822
+differ. AccessLease checks the actual creator and owner, rather than accepting
+
+10
+00:00:35,822 --> 00:00:39,762
+an issuer claim inside copied metadata. The trusted sample was allowed.
+
+11
+00:00:39,762 --> 00:00:43,703
+The attacker sample returned issuer mismatch. Each entity key is linked
+
+12
+00:00:43,703 --> 00:00:47,643
+to its separate creation transaction through the Entity Created event, successful
+
+13
+00:00:47,643 --> 00:00:49,076
+receipt, and block timestamp.
+
+14
+00:00:56,000 --> 00:00:59,991
+The automated recipient signed a production challenge using a disposable in
+
+15
+00:00:59,991 --> 00:01:03,982
+memory EVM key. Access returned the synthetic vault with HTTP two
+
+16
+00:01:03,982 --> 00:01:07,973
+hundred. Reusing the exact same signed request returned HTTP four oh
+
+17
+00:01:07,973 --> 00:01:11,964
+three, challenge used. New signed requests for the wrong scope, wrong
+
+18
+00:01:11,964 --> 00:01:15,955
+recipient, and forged creator were also denied. A wrong origin was
+
+19
+00:01:15,955 --> 00:01:19,945
+rejected at challenge issuance. These are gateway responses from the deployed
+
+20
+00:01:19,945 --> 00:01:21,760
+application, not mocked policy results.
+
+21
+00:01:24,000 --> 00:01:28,053
+Revocation used a new disposable fixture. It first granted signed access.
+
+22
+00:01:28,053 --> 00:01:32,106
+The trusted issuer then deleted that same entity. The confirmed deletion
+
+23
+00:01:32,106 --> 00:01:36,159
+transaction and Entity Deleted event distinguish revocation from simple absence. A
+
+24
+00:01:36,159 --> 00:01:40,211
+fresh SDK lookup found no entity, and a newly signed production
+
+25
+00:01:40,211 --> 00:01:44,264
+access request returned four oh three, not found. The deployed showcase
+
+26
+00:01:44,264 --> 00:01:45,370
+grant was preserved.
+
+27
+00:01:52,000 --> 00:01:55,580
+Readonly does not mean the storage expiry can never move. The
+
+28
+00:01:55,580 --> 00:01:59,160
+owner extended this fixture from block seven two seven two oh
+
+29
+00:01:59,160 --> 00:02:02,740
+eight to seven two seven four eight five. Its immutable payload
+
+30
+00:02:02,740 --> 00:02:06,320
+and authorization deadline remained unchanged. After the real deadline, the entity
+
+31
+00:02:06,320 --> 00:02:09,900
+was still present, but signed access returned deadline passed. A separate
+
+32
+00:02:09,900 --> 00:02:13,480
+sixty second storage fixture allowed access before expiring, then became absent
+
+33
+00:02:13,480 --> 00:02:17,059
+and denied with not found. Both checks used real elapsed time
+
+34
+00:02:17,059 --> 00:02:18,361
+and live chain height.
+
+35
+00:02:26,000 --> 00:02:30,696
+The repository preserves receipts, timestamps, decoded payloads and redacted production responses.
+
+36
+00:02:30,696 --> 00:02:35,392
+Offline checks validate sixteen production outcomes, four existing creation receipts and
+
+37
+00:02:35,392 --> 00:02:40,088
+five new lifecycle receipts. All seventy five local tests pass. The
+
+38
+00:02:40,088 --> 00:02:44,784
+build succeeds, and the audit reports zero vulnerabilities. MetaMask footage remains
+
+39
+00:02:44,784 --> 00:02:49,480
+a manual check. Arkiv proves the permission record; AccessLease authenticates the
+
+40
+00:02:49,480 --> 00:02:51,615
+wallet and enforces every fetch.
